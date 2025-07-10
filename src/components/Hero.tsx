@@ -2,6 +2,7 @@ import type React from "react"
 import { motion } from "framer-motion"
 import { useTranslation } from "react-i18next"
 import { Star, Award } from "lucide-react"
+import heroBg from "../assets/hero-bg.png"
 
 const Hero: React.FC = () => {
   const { t } = useTranslation()
@@ -31,17 +32,20 @@ const Hero: React.FC = () => {
       id="home"
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
       style={{
-        backgroundImage: "url(/assets/hero-bg.png)",
+        backgroundImage: `url(${heroBg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     >
       {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/50"></div>
+
+      {/* Additional gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60"></div>
 
       {/* Background Pattern - keep existing */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10 z-10">
         <div className="absolute top-20 left-20 w-32 h-32 border-2 border-yellow-400 rounded-full"></div>
         <div className="absolute bottom-20 right-20 w-24 h-24 border-2 border-yellow-400 rotate-45"></div>
         <div className="absolute top-1/2 left-10 w-16 h-16 border-2 border-yellow-400"></div>
@@ -72,7 +76,10 @@ const Hero: React.FC = () => {
           </div>
         </motion.div>
 
-        <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+        <motion.h1
+          variants={itemVariants}
+          className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl"
+        >
           <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
             {t("hero.title")}
           </span>
@@ -80,7 +87,7 @@ const Hero: React.FC = () => {
 
         <motion.p
           variants={itemVariants}
-          className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed"
+          className="text-xl md:text-2xl text-gray-100 mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-lg"
         >
           {t("hero.subtitle")}
         </motion.p>
@@ -109,6 +116,11 @@ const Hero: React.FC = () => {
           className="absolute bottom-1/4 right-1/3 w-3 h-3 bg-yellow-400 rounded-full opacity-40"
         ></motion.div>
       </motion.div>
+
+      {/* Debug: Show if image is loading */}
+      <div className="absolute bottom-4 right-4 z-30 text-white text-xs opacity-50">
+        Background: {heroBg ? "Loaded" : "Not loaded"}
+      </div>
     </section>
   )
 }

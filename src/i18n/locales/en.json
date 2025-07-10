@@ -12,17 +12,23 @@
     "experience": "years of experience"
   },
   "services": {
-    "title": "Our Classic Vehicles",
-    "subtitle": "Discover our exclusive fleet of vintage American cars",
+    "title": "Our Classic Fleet",
+    "subtitle": "Discover our authentic Cuban vintage cars, restored with passion and maintained with excellence",
     "taxi1": {
-      "name": "Cadillac DeVille 1959",
-      "description": "The iconic Cadillac with its characteristic tail fins, perfect for special occasions.",
-      "features": ["V8 Engine", "Air conditioning", "Vintage sound", "Leather seats"]
+      "name": "Chevrolet 1953 - 'El Malecón'",
+      "description": "Our elegant emerald green Chevrolet, perfect for coastal tours and romantic experiences. Completely restored with original parts.",
+      "features": ["Restored V8 engine", "Air conditioning", "Leather seats", "Vintage radio"],
+      "capacity": "Up to 4 passengers",
+      "year": "1953",
+      "price": "From $25/hour"
     },
     "taxi2": {
-      "name": "Chevrolet Bel Air 1957",
-      "description": "The quintessential American classic, restored with love and attention to detail.",
-      "features": ["Restored engine", "Premium interior", "Original chrome", "Unique experience"]
+      "name": "Chevrolet Bel Air 1954 - 'Trinidad'",
+      "description": "The iconic cherry red Bel Air, symbol of Cuban glamour. Ideal for weddings, special events and photo tours through the colonial city.",
+      "features": ["Original chrome", "Premium interior", "Improved suspension", "Sound system"],
+      "capacity": "Up to 4 passengers",
+      "year": "1954",
+      "price": "From $30/hour"
     }
   },
   "excursions": {
