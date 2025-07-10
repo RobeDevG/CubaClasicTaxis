@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "excursions": "Excursions",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Experience Vintage Luxury",
+    "subtitle": "Travel in style with our restored classic American taxis",
+    "cta": "Book Now",
+    "experience": "years of experience"
+  },
+  "services": {
+    "title": "Our Classic Vehicles",
+    "subtitle": "Discover our exclusive fleet of vintage American cars",
+    "taxi1": {
+      "name": "Cadillac DeVille 1959",
+      "description": "The iconic Cadillac with its characteristic tail fins, perfect for special occasions.",
+      "features": ["V8 Engine", "Air conditioning", "Vintage sound", "Leather seats"]
+    },
+    "taxi2": {
+      "name": "Chevrolet Bel Air 1957",
+      "description": "The quintessential American classic, restored with love and attention to detail.",
+      "features": ["Restored engine", "Premium interior", "Original chrome", "Unique experience"]
+    }
+  },
+  "excursions": {
+    "title": "Exclusive Excursions",
+    "subtitle": "Discover the most beautiful places with our premium service",
+    "viewAll": "View all excursions",
+    "tours": {
+      "city": {
+        "title": "City Tour",
+        "description": "Explore the city's most emblematic points in our classics"
+      },
+      "sunset": {
+        "title": "Romantic Sunset",
+        "description": "A unique experience for couples with sunset views"
+      },
+      "historic": {
+        "title": "Historic Center",
+        "description": "Explore local history with the charm of the past"
+      },
+      "custom": {
+        "title": "Custom Tour",
+        "description": "We design the perfect experience according to your preferences"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to make your experience unforgettable",
+    "whatsapp": "WhatsApp",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "whatsappText": "Chat with us",
+    "facebookText": "Follow us on Facebook",
+    "instagramText": "Photos on Instagram"
+  },
+  "footer": {
+    "tagline": "Where vintage luxury meets modern service",
+    "rights": "All rights reserved."
+  }
+}

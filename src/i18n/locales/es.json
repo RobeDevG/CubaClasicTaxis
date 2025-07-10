@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "excursions": "Excursiones",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Experimenta el Lujo Vintage",
+    "subtitle": "Viaja con estilo en nuestros taxis clásicos americanos restaurados",
+    "cta": "Reservar Ahora",
+    "experience": "años de experiencia"
+  },
+  "services": {
+    "title": "Nuestros Vehículos Clásicos",
+    "subtitle": "Descubre nuestra exclusiva flota de autos vintage americanos",
+    "taxi1": {
+      "name": "Cadillac DeVille 1959",
+      "description": "El icónico Cadillac con sus características aletas traseras, perfecto para ocasiones especiales.",
+      "features": ["Motor V8", "Aire acondicionado", "Sonido vintage", "Asientos de cuero"]
+    },
+    "taxi2": {
+      "name": "Chevrolet Bel Air 1957",
+      "description": "El clásico americano por excelencia, restaurado con amor y atención al detalle.",
+      "features": ["Motor restaurado", "Interior premium", "Cromados originales", "Experiencia única"]
+    }
+  },
+  "excursions": {
+    "title": "Excursiones Exclusivas",
+    "subtitle": "Descubre los lugares más hermosos con nuestro servicio premium",
+    "viewAll": "Ver todas las excursiones",
+    "tours": {
+      "city": {
+        "title": "Tour por la Ciudad",
+        "description": "Recorre los puntos más emblemáticos de la ciudad en nuestros clásicos"
+      },
+      "sunset": {
+        "title": "Atardecer Romántico",
+        "description": "Una experiencia única para parejas con vista al atardecer"
+      },
+      "historic": {
+        "title": "Centro Histórico",
+        "description": "Explora la historia local con el encanto del pasado"
+      },
+      "custom": {
+        "title": "Tour Personalizado",
+        "description": "Diseñamos la experiencia perfecta según tus preferencias"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos aquí para hacer tu experiencia inolvidable",
+    "whatsapp": "WhatsApp",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "whatsappText": "Chatea con nosotros",
+    "facebookText": "Síguenos en Facebook",
+    "instagramText": "Fotos en Instagram"
+  },
+  "footer": {
+    "tagline": "Donde el lujo vintage encuentra el servicio moderno",
+    "rights": "Todos los derechos reservados."
+  }
+}
