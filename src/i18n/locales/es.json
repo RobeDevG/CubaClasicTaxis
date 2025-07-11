@@ -14,6 +14,11 @@
   "services": {
     "title": "Nuestra Flota Clásica",
     "subtitle": "Descubre nuestros auténticos autos vintage cubanos, restaurados con pasión y mantenidos con excelencia",
+    "bookNow": "Reservar Ahora",
+    "viewMore": "Ver Más",
+    "specialTitle": "¿Necesitas algo especial?",
+    "specialDescription": "Contáctanos para servicios personalizados, eventos especiales o tours a medida.",
+    "contactNow": "Contactar Ahora",
     "taxi1": {
       "name": "Chevrolet 1953 - 'El Malecón'",
       "description": "Nuestro elegante Chevrolet verde esmeralda, perfecto para recorridos costeros y experiencias románticas. Restaurado completamente con piezas originales.",
@@ -33,24 +38,29 @@
   },
   "excursions": {
     "title": "Excursiones Exclusivas",
-    "subtitle": "Descubre los lugares más hermosos con nuestro servicio premium",
+    "subtitle": "Descubre los destinos más espectaculares de Cuba con nuestro servicio premium",
     "viewAll": "Ver todas las excursiones",
+    "book": "Reservar",
     "tours": {
-      "city": {
-        "title": "Tour por la Ciudad",
-        "description": "Recorre los puntos más emblemáticos de la ciudad en nuestros clásicos"
+      "vinales": {
+        "title": "Valle de Viñales",
+        "description": "Explora el famoso Mural de la Prehistoria y los mogotes únicos del valle. Una experiencia cultural y natural inolvidable.",
+        "highlights": ["Mural de la Prehistoria", "Paisajes únicos", "Cultura local", "Fotografía espectacular"]
       },
-      "sunset": {
-        "title": "Atardecer Romántico",
-        "description": "Una experiencia única para parejas con vista al atardecer"
+      "habana": {
+        "title": "La Habana Nocturna",
+        "description": "Recorre el icónico Capitolio y el centro histórico al atardecer. Vive la magia de La Habana cuando se ilumina.",
+        "highlights": ["El Capitolio", "Centro histórico", "Atardecer dorado", "Arquitectura colonial"]
       },
-      "historic": {
-        "title": "Centro Histórico",
-        "description": "Explora la historia local con el encanto del pasado"
+      "trinidad": {
+        "title": "Trinidad y Cascadas",
+        "description": "Combina la ciudad colonial de Trinidad con las cascadas naturales de Topes de Collantes. Naturaleza y historia en un solo tour.",
+        "highlights": ["Ciudad colonial", "Cascadas naturales", "Aguas cristalinas", "Aventura y cultura"]
       },
-      "custom": {
-        "title": "Tour Personalizado",
-        "description": "Diseñamos la experiencia perfecta según tus preferencias"
+      "cuevalospeces": {
+        "title": "Cueva de los Peces",
+        "description": "Descubre este cenote natural en la Ciénaga de Zapata con aguas cristalinas perfectas para snorkel y buceo. Un paraíso natural único.",
+        "highlights": ["Cenote natural", "Snorkel y buceo", "Aguas cristalinas", "Ecosistema único"]
       }
     }
   },
@@ -62,7 +72,9 @@
     "instagram": "Instagram",
     "whatsappText": "Chatea con nosotros",
     "facebookText": "Síguenos en Facebook",
-    "instagramText": "Fotos en Instagram"
+    "instagramText": "Fotos en Instagram",
+    "contactInfo": "Información de Contacto",
+    "contact": "Contactar"
   },
   "footer": {
     "tagline": "Donde el lujo vintage encuentra el servicio moderno",

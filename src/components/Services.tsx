@@ -18,6 +18,7 @@ const Services: React.FC = () => {
       accentColor: "text-emerald-600",
       bgColor: "bg-emerald-500",
       borderColor: "border-emerald-500",
+      whatsappNumber: "+5355799449",
     },
     {
       key: "taxi2",
@@ -26,6 +27,7 @@ const Services: React.FC = () => {
       accentColor: "text-red-600",
       bgColor: "bg-red-500",
       borderColor: "border-red-500",
+      whatsappNumber: "+53 52026190",
     },
   ]
 
@@ -53,6 +55,11 @@ const Services: React.FC = () => {
       opacity: 1,
       transition: { duration: 0.8, ease: "easeOut" },
     },
+  }
+
+  const handleWhatsAppClick = (phoneNumber: string, carName: string) => {
+    const message = encodeURIComponent(`Hola! Me interesa reservar el ${carName}. ¿Podrían darme más información?`)
+    window.open(`https://wa.me/${phoneNumber.replace(/\s/g, "")}?text=${message}`, "_blank")
   }
 
   return (
@@ -156,21 +163,15 @@ const Services: React.FC = () => {
                     })}
                   </div>
 
-                  {/* Action Buttons */}
-                  <div className="flex space-x-3">
+                  {/* Action Button - Solo Reservar */}
+                  <div className="flex">
                     <motion.button
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className={`flex-1 py-3 bg-gradient-to-r ${taxi.color} text-white font-bold rounded-xl hover:shadow-lg transition-all duration-300`}
+                      onClick={() => handleWhatsAppClick(taxi.whatsappNumber, t(`services.${taxi.key}.name`))}
+                      className={`w-full py-3 bg-gradient-to-r ${taxi.color} text-white font-bold rounded-xl hover:shadow-lg transition-all duration-300`}
                     >
-                      Reservar Ahora
-                    </motion.button>
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="px-6 py-3 border-2 border-gray-300 text-gray-700 font-medium rounded-xl hover:border-gray-400 hover:bg-gray-50 transition-all duration-300"
-                    >
-                      Ver Más
+                      {t("services.bookNow")}
                     </motion.button>
                   </div>
                 </div>
@@ -193,14 +194,15 @@ const Services: React.FC = () => {
           className="text-center mt-16"
         >
           <div className="bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-2xl p-8 max-w-2xl mx-auto text-black">
-            <h3 className="text-2xl font-bold mb-4">¿Necesitas algo especial?</h3>
-            <p className="mb-6">Contáctanos para servicios personalizados, eventos especiales o tours a medida.</p>
+            <h3 className="text-2xl font-bold mb-4">{t("services.specialTitle")}</h3>
+            <p className="mb-6">{t("services.specialDescription")}</p>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => handleWhatsAppClick("+53 52026190", "servicios personalizados")}
               className="px-8 py-3 bg-black text-white font-bold rounded-xl hover:bg-gray-800 transition-all duration-300"
             >
-              Contactar Ahora
+              {t("services.contactNow")}
             </motion.button>
           </div>
         </motion.div>

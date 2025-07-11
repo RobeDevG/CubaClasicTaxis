@@ -14,6 +14,11 @@
   "services": {
     "title": "Our Classic Fleet",
     "subtitle": "Discover our authentic Cuban vintage cars, restored with passion and maintained with excellence",
+    "bookNow": "Book Now",
+    "viewMore": "View More",
+    "specialTitle": "Need something special?",
+    "specialDescription": "Contact us for personalized services, special events or custom tours.",
+    "contactNow": "Contact Now",
     "taxi1": {
       "name": "Chevrolet 1953 - 'El Malecón'",
       "description": "Our elegant emerald green Chevrolet, perfect for coastal tours and romantic experiences. Completely restored with original parts.",
@@ -33,24 +38,29 @@
   },
   "excursions": {
     "title": "Exclusive Excursions",
-    "subtitle": "Discover the most beautiful places with our premium service",
+    "subtitle": "Discover Cuba's most spectacular destinations with our premium service",
     "viewAll": "View all excursions",
+    "book": "Book",
     "tours": {
-      "city": {
-        "title": "City Tour",
-        "description": "Explore the city's most emblematic points in our classics"
+      "vinales": {
+        "title": "Viñales Valley",
+        "description": "Explore the famous Mural de la Prehistoria and the unique mogotes of the valley. An unforgettable cultural and natural experience.",
+        "highlights": ["Prehistoric Mural", "Unique landscapes", "Local culture", "Spectacular photography"]
       },
-      "sunset": {
-        "title": "Romantic Sunset",
-        "description": "A unique experience for couples with sunset views"
+      "habana": {
+        "title": "Havana by Night",
+        "description": "Tour the iconic Capitol and historic center at sunset. Experience the magic of Havana when it lights up.",
+        "highlights": ["The Capitol", "Historic center", "Golden sunset", "Colonial architecture"]
       },
-      "historic": {
-        "title": "Historic Center",
-        "description": "Explore local history with the charm of the past"
+      "trinidad": {
+        "title": "Trinidad & Waterfalls",
+        "description": "Combine the colonial city of Trinidad with the natural waterfalls of Topes de Collantes. Nature and history in one tour.",
+        "highlights": ["Colonial city", "Natural waterfalls", "Crystal waters", "Adventure & culture"]
       },
-      "custom": {
-        "title": "Custom Tour",
-        "description": "We design the perfect experience according to your preferences"
+      "cuevalospeces": {
+        "title": "Cave of the Fishes",
+        "description": "Discover this natural cenote in Zapata Swamp with crystal clear waters perfect for snorkeling and diving. A unique natural paradise.",
+        "highlights": ["Natural cenote", "Snorkel & diving", "Crystal clear waters", "Unique ecosystem"]
       }
     }
   },
@@ -62,7 +72,9 @@
     "instagram": "Instagram",
     "whatsappText": "Chat with us",
     "facebookText": "Follow us on Facebook",
-    "instagramText": "Photos on Instagram"
+    "instagramText": "Photos on Instagram",
+    "contactInfo": "Contact Information",
+    "contact": "Contact"
   },
   "footer": {
     "tagline": "Where vintage luxury meets modern service",
