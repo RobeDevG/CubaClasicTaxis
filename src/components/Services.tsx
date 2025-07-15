@@ -100,7 +100,7 @@ const Services: React.FC = () => {
                   <img
                     src={taxi.image || "/placeholder.svg"}
                     alt={t(`services.${taxi.key}.name`)}
-                    className="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div
                     className={`absolute inset-0 bg-gradient-to-t ${taxi.color} opacity-10 group-hover:opacity-20 transition-opacity duration-300`}
