@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { Car, Globe } from 'lucide-react';
+import { Car } from 'lucide-react';
 import LanguageToggle from './LanguageToggle';
 
 const Header: React.FC = () => {
