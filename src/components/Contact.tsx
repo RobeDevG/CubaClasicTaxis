@@ -3,7 +3,7 @@
 import type React from "react"
 import { motion } from "framer-motion"
 import { useTranslation } from "react-i18next"
-import { MessageCircle, Facebook, Instagram, Phone, Mail } from "lucide-react"
+import { MessageCircle, /* Facebook, Instagram, */ Phone, Mail } from "lucide-react"
 
 const Contact: React.FC = () => {
   const { t } = useTranslation()
@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
       url: "https://wa.me/5352026190",
       bgColor: "bg-green-50",
     },
-    {
+    /* {
       key: "facebook",
       icon: Facebook,
       color: "from-blue-600 to-blue-700",
@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
       hoverColor: "hover:from-pink-400 hover:to-purple-500",
       url: "https://instagram.com/classictaxiagency",
       bgColor: "bg-pink-50",
-    },
+    }, */
   ]
 
   const containerVariants = {
@@ -73,7 +73,7 @@ const Contact: React.FC = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto"
+          className="flex justify-center gap-8 max-w-4xl mx-auto"
         >
           {contactMethods.map((method) => {
             const IconComponent = method.icon
