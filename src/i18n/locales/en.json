@@ -20,7 +20,7 @@
     "specialDescription": "Contact us for personalized services, special events or custom tours.",
     "contactNow": "Contact Now",
     "taxi1": {
-      "name": "Chevrolet 1953 - 'El Malecón'",
+      "name": "Chevrolet 1953",
       "description": "Our elegant emerald green Chevrolet, perfect for coastal tours and romantic experiences. Completely restored with original parts.",
       "features": ["Restored V8 engine", "Air conditioning", "Leather seats", "Vintage radio"],
       "capacity": "Up to 4 passengers",
@@ -28,7 +28,7 @@
       "price": "From $25/hour"
     },
     "taxi2": {
-      "name": "Chevrolet Bel Air 1954 - 'Trinidad'",
+      "name": "Chevrolet Bel Air 1954",
       "description": "The iconic cherry red Bel Air, symbol of Cuban glamour. Ideal for weddings, special events and photo tours through the colonial city.",
       "features": ["Original chrome", "Premium interior", "Improved suspension", "Sound system"],
       "capacity": "Up to 4 passengers",
