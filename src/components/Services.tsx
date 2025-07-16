@@ -16,7 +16,7 @@ const Services: React.FC = () => {
       accentColor: "text-emerald-600",
       bgColor: "bg-emerald-500",
       borderColor: "border-emerald-500",
-      whatsappNumber: "+5355799449",
+      whatsappNumber: "+5355794449",
     },
     {
       key: "taxi2",
