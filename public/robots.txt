@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /#home
+Allow: /#services
+Allow: /#excursions
+Allow: /#contact
+Sitemap: https://cubaclassictaxis.netlify.app/sitemap.xml
