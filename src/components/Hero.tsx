@@ -27,6 +27,11 @@ const Hero: React.FC = () => {
     },
   }
 
+  const handleWhatsAppClick = () => {
+    const message = encodeURIComponent("Hola! Me interesa reservar un taxi clásico. ¿Podrían darme más información?")
+    window.open(`https://wa.me/5352384482?text=${message}`, "_blank")
+  }
+
   return (
     <section
       id="home"
@@ -94,9 +99,10 @@ const Hero: React.FC = () => {
 
         <motion.div variants={itemVariants}>
           <motion.button
+            onClick={handleWhatsAppClick}
             whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(251, 191, 36, 0.5)" }}
             whileTap={{ scale: 0.95 }}
-            className="px-12 py-4 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold text-lg rounded-full shadow-2xl hover:from-yellow-500 hover:to-yellow-700 transition-all duration-300"
+            className="px-12 py-4 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold text-lg rounded-full shadow-2xl hover:from-yellow-500 hover:to-yellow-700 transition-all duration-300 cursor-pointer"
           >
             {t("hero.cta")}
           </motion.button>

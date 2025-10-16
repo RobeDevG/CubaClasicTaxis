@@ -33,7 +33,7 @@
       "features": ["Original chrome", "Premium interior", "Improved suspension", "Sound system"],
       "capacity": "Up to 4 passengers",
       "year": "1954",
-      "price": "From $30/hour"
+      "price": "From $25/hour"
     }
   },
   "excursions": {
@@ -61,6 +61,11 @@
         "title": "Cave of the Fishes",
         "description": "Discover this natural cenote in Zapata Swamp with crystal clear waters perfect for snorkeling and diving. A unique natural paradise.",
         "highlights": ["Natural cenote", "Snorkel & diving", "Crystal clear waters", "Unique ecosystem"]
+      },
+        "matanzas": {
+        "title": "Colonial Matanzas",
+        "description": "Discover the rich history and architecture of Matanzas, known as the Athens of Cuba. Tour its bridges and colonial buildings.",
+        "highlights": ["Colonial architecture", "Historic bridges", "Cultural center", "Panoramic views"]
       }
     }
   },

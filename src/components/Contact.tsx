@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
       icon: MessageCircle,
       color: "from-green-500 to-green-600",
       hoverColor: "hover:from-green-400 hover:to-green-500",
-      url: "https://wa.me/5352026190",
+      url: "https://wa.me/5352384482",
       bgColor: "bg-green-50",
     },
     /* {
@@ -50,6 +50,11 @@ const Contact: React.FC = () => {
       opacity: 1,
       transition: { duration: 0.8, ease: "easeOut" },
     },
+  }
+
+  const handleWhatsAppClick = (phoneNumber: string) => {
+    const message = encodeURIComponent("Hola! Me interesa conocer más sobre sus servicios de taxis clásicos.")
+    window.open(`https://wa.me/${phoneNumber.replace(/\s/g, "")}?text=${message}`, "_blank")
   }
 
   return (
@@ -119,9 +124,39 @@ const Contact: React.FC = () => {
           <div className="bg-black text-white rounded-2xl p-8 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold mb-6">{t("contact.contactInfo")}</h3>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="flex items-center space-x-3 justify-center">
-                <Phone className="h-5 w-5 text-yellow-400" />
-                <span>+53 52026190</span>
+              <div className="flex flex-col space-y-3">
+                <div className="flex items-center space-x-3 justify-center">
+                  <Phone className="h-5 w-5 text-yellow-400" />
+                  <motion.a
+                    href="https://wa.me/5352384482"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.05 }}
+                    className="hover:text-yellow-400 transition-colors duration-300 cursor-pointer"
+                    onClick={(e) => {
+                      e.preventDefault()
+                      handleWhatsAppClick("5352384482")
+                    }}
+                  >
+                    +53 52384482
+                  </motion.a>
+                </div>
+                <div className="flex items-center space-x-3 justify-center">
+                  <Phone className="h-5 w-5 text-yellow-400" />
+                  <motion.a
+                    href="https://wa.me/5353431628"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.05 }}
+                    className="hover:text-yellow-400 transition-colors duration-300 cursor-pointer"
+                    onClick={(e) => {
+                      e.preventDefault()
+                      handleWhatsAppClick("5353431628")
+                    }}
+                  >
+                    +53 53431628
+                  </motion.a>
+                </div>
               </div>
               <div className="flex items-center space-x-3 justify-center">
                 <Mail className="h-5 w-5 text-yellow-400" />

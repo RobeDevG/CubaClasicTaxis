@@ -33,7 +33,7 @@
       "features": ["Cromados originales", "Interior premium", "Suspensión mejorada", "Sistema de sonido"],
       "capacity": "Hasta 4 pasajeros",
       "year": "1954",
-      "price": "Desde $30/hora"
+      "price": "Desde $25/hora"
     }
   },
   "excursions": {
@@ -61,6 +61,11 @@
         "title": "Cueva de los Peces",
         "description": "Descubre este cenote natural en la Ciénaga de Zapata con aguas cristalinas perfectas para snorkel y buceo. Un paraíso natural único.",
         "highlights": ["Cenote natural", "Snorkel y buceo", "Aguas cristalinas", "Ecosistema único"]
+      },
+       "matanzas": {
+        "title": "Matanzas Colonial",
+        "description": "Descubre la rica historia y arquitectura de Matanzas, conocida como la Atenas de Cuba. Recorre sus puentes y edificios coloniales.",
+        "highlights": ["Arquitectura colonial", "Puentes históricos", "Centro cultural", "Vistas panorámicas"]
       }
     }
   },

@@ -16,7 +16,7 @@ const Services: React.FC = () => {
       accentColor: "text-emerald-600",
       bgColor: "bg-emerald-500",
       borderColor: "border-emerald-500",
-      whatsappNumber: "+5355794449",
+      whatsappNumber: "53 52384482",
     },
     {
       key: "taxi2",
@@ -25,7 +25,7 @@ const Services: React.FC = () => {
       accentColor: "text-red-600",
       bgColor: "bg-red-500",
       borderColor: "border-red-500",
-      whatsappNumber: "+53 52026190",
+      whatsappNumber: "+53 52384482",
     },
   ]
 
@@ -130,11 +130,9 @@ const Services: React.FC = () => {
 
                 {/* Content Section */}
                 <div className="p-8">
-                  <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-start justify-between mb-6">
                     <h3 className="text-2xl font-bold text-gray-900 leading-tight">{t(`services.${taxi.key}.name`)}</h3>
                   </div>
-
-                  <p className="text-gray-600 mb-6 leading-relaxed text-lg">{t(`services.${taxi.key}.description`)}</p>
 
                   {/* Info Cards */}
                   <div className="grid grid-cols-1 gap-3 mb-6">
@@ -145,7 +143,7 @@ const Services: React.FC = () => {
                   </div>
 
                   {/* Features Grid */}
-                  <div className="grid grid-cols-2 gap-3 mb-6">
+                  <div className="grid grid-cols-2 gap-3 mb-8">
                     {features.map((feature: string, featureIndex: number) => {
                       const IconComponent = featureIcons[featureIndex as keyof typeof featureIcons]
                       return (
@@ -197,7 +195,7 @@ const Services: React.FC = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => handleWhatsAppClick("+53 52026190", "servicios personalizados")}
+              onClick={() => handleWhatsAppClick("+53 52384482", "servicios personalizados")}
               className="px-8 py-3 bg-black text-white font-bold rounded-xl hover:bg-gray-800 transition-all duration-300"
             >
               {t("services.contactNow")}

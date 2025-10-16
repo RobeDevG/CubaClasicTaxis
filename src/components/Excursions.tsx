@@ -1,53 +1,63 @@
-import type React from "react"
-import { motion } from "framer-motion"
-import { useTranslation } from "react-i18next"
-import { Clock, Users, Star, MapPin } from "lucide-react"
-import vinalesImg from "../assets/viñales.png"
-import habanaImg from "../assets/habana.png"
-import trinidadImg from "../assets/trinidad.png"
-import cuevalospeceImg from "../assets/cuevadelospeces.png"
+import type React from "react";
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import { Clock, Users, Star, MapPin } from "lucide-react";
+import vinalesImg from "../assets/viñales.png";
+import habanaImg from "../assets/habana.png";
+import trinidadImg from "../assets/trinidad.png";
+import cuevalospeceImg from "../assets/cuevadelospeces.png";
+import matanzasImg from "../assets/Teatrosauto.jpg";
 
 const Excursions: React.FC = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   const excursions = [
     {
       key: "vinales",
       image: vinalesImg,
-      duration: "8h",
+      duration: "12-14h",
       capacity: "4 personas",
-      price: "$85",
+      price: "$300",
       location: "Pinar del Río",
       color: "from-green-500 to-emerald-600",
     },
     {
       key: "habana",
       image: habanaImg,
-      duration: "4h",
+      duration: "8-10h",
       capacity: "4 personas",
-      price: "$65",
+      price: "$150",
       location: "La Habana",
       color: "from-amber-500 to-orange-600",
     },
     {
       key: "trinidad",
       image: trinidadImg,
-      duration: "6h",
+      duration: "12-14h",
       capacity: "4 personas",
-      price: "$75",
+      price: "$300",
       location: "Sancti Spíritus",
       color: "from-teal-500 to-cyan-600",
     },
     {
       key: "cuevalospeces",
       image: cuevalospeceImg,
-      duration: "7h",
+      duration: "7-9h",
       capacity: "4 personas",
-      price: "$90",
+      price: "$140",
       location: "Matanzas",
       color: "from-blue-500 to-teal-600",
     },
-  ]
+    {
+      key: "matanzas",
+      image: matanzasImg,
+      duration: "6-8h",
+      capacity: "4 personas",
+      price: "$120",
+      location: "Matanzas",
+      color: "from-purple-500 to-indigo-600",
+    },
+  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -57,7 +67,7 @@ const Excursions: React.FC = () => {
         staggerChildren: 0.2,
       },
     },
-  }
+  };
 
   const cardVariants = {
     hidden: { y: 50, opacity: 0 },
@@ -66,12 +76,14 @@ const Excursions: React.FC = () => {
       opacity: 1,
       transition: { duration: 0.8, ease: "easeOut" },
     },
-  }
+  };
 
   const handleWhatsAppClick = (tourName: string) => {
-    const message = encodeURIComponent(`Hola! Me interesa la excursión "${tourName}". ¿Podrían darme más información?`)
-    window.open(`https://wa.me/5352026190?text=${message}`, "_blank")
-  }
+    const message = encodeURIComponent(
+      `Hola! Me interesa la excursión "${tourName}". ¿Podrían darme más información?`
+    );
+    window.open(`https://wa.me/5352384482?text=${message}`, "_blank");
+  };
 
   return (
     <section id="excursions" className="py-20 bg-black">
@@ -83,8 +95,12 @@ const Excursions: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">{t("excursions.title")}</h2>
-          <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8 leading-relaxed">{t("excursions.subtitle")}</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            {t("excursions.title")}
+          </h2>
+          <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8 leading-relaxed">
+            {t("excursions.subtitle")}
+          </p>
         </motion.div>
 
         <motion.div
@@ -92,10 +108,13 @@ const Excursions: React.FC = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {excursions.map((excursion) => {
-            const highlights = t(`excursions.tours.${excursion.key}.highlights`, { returnObjects: true }) as string[]
+            const highlights = t(
+              `excursions.tours.${excursion.key}.highlights`,
+              { returnObjects: true }
+            ) as string[];
 
             return (
               <motion.div
@@ -124,7 +143,9 @@ const Excursions: React.FC = () => {
                   <div className="absolute top-4 left-4">
                     <div className="flex items-center space-x-1 bg-black/70 backdrop-blur-sm px-3 py-2 rounded-full">
                       <MapPin className="h-4 w-4 text-yellow-400" />
-                      <span className="text-white text-sm font-medium">{excursion.location}</span>
+                      <span className="text-white text-sm font-medium">
+                        {excursion.location}
+                      </span>
                     </div>
                   </div>
 
@@ -132,7 +153,10 @@ const Excursions: React.FC = () => {
                   <div className="absolute bottom-4 left-4">
                     <div className="flex items-center space-x-1">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                        <Star
+                          key={i}
+                          className="h-4 w-4 text-yellow-400 fill-current"
+                        />
                       ))}
                     </div>
                   </div>
@@ -140,7 +164,9 @@ const Excursions: React.FC = () => {
 
                 {/* Content Section - Flex grow to push button to bottom */}
                 <div className="p-6 flex-1 flex flex-col">
-                  <h3 className="text-xl font-bold text-white mb-3">{t(`excursions.tours.${excursion.key}.title`)}</h3>
+                  <h3 className="text-xl font-bold text-white mb-3">
+                    {t(`excursions.tours.${excursion.key}.title`)}
+                  </h3>
 
                   <p className="text-gray-400 mb-4 text-sm leading-relaxed flex-grow">
                     {t(`excursions.tours.${excursion.key}.description`)}
@@ -161,11 +187,16 @@ const Excursions: React.FC = () => {
                   {/* Highlights */}
                   <div className="mb-6">
                     <div className="grid grid-cols-2 gap-2">
-                      {highlights.slice(0, 4).map((highlight: string, index: number) => (
-                        <div key={index} className="text-xs text-gray-400 bg-gray-800 px-2 py-1 rounded-md text-center">
-                          {highlight}
-                        </div>
-                      ))}
+                      {highlights
+                        .slice(0, 4)
+                        .map((highlight: string, index: number) => (
+                          <div
+                            key={index}
+                            className="text-xs text-gray-400 bg-gray-800 px-2 py-1 rounded-md text-center"
+                          >
+                            {highlight}
+                          </div>
+                        ))}
                     </div>
                   </div>
 
@@ -174,7 +205,11 @@ const Excursions: React.FC = () => {
                     <motion.button
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      onClick={() => handleWhatsAppClick(t(`excursions.tours.${excursion.key}.title`))}
+                      onClick={() =>
+                        handleWhatsAppClick(
+                          t(`excursions.tours.${excursion.key}.title`)
+                        )
+                      }
                       className={`w-full py-3 bg-gradient-to-r ${excursion.color} text-white font-bold rounded-lg hover:shadow-lg transition-all duration-300`}
                     >
                       {t("excursions.book")}
@@ -182,12 +217,12 @@ const Excursions: React.FC = () => {
                   </div>
                 </div>
               </motion.div>
-            )
+            );
           })}
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Excursions
+export default Excursions;
