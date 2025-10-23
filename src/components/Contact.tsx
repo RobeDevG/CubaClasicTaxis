@@ -1,7 +1,7 @@
 import type React from "react"
 import { motion } from "framer-motion"
 import { useTranslation } from "react-i18next"
-import { MessageCircle, /* Facebook, Instagram, */ Phone, Mail } from "lucide-react"
+import { MessageCircle, Facebook, Instagram, Phone, Mail } from "lucide-react"
 
 const Contact: React.FC = () => {
   const { t } = useTranslation()
@@ -15,12 +15,12 @@ const Contact: React.FC = () => {
       url: "https://wa.me/5352384482",
       bgColor: "bg-green-50",
     },
-    /* {
+    {
       key: "facebook",
       icon: Facebook,
       color: "from-blue-600 to-blue-700",
       hoverColor: "hover:from-blue-500 hover:to-blue-600",
-      url: "https://facebook.com/classictaxiagency",
+      url: "https://www.facebook.com/share/17JEPXBoEM/?mibextid=qi2Omg",
       bgColor: "bg-blue-50",
     },
     {
@@ -28,9 +28,9 @@ const Contact: React.FC = () => {
       icon: Instagram,
       color: "from-pink-500 to-purple-600",
       hoverColor: "hover:from-pink-400 hover:to-purple-500",
-      url: "https://instagram.com/classictaxiagency",
+      url: "https://www.instagram.com/joel.valdes.5648137?igsh=N25icDZrMmR0Znl3",
       bgColor: "bg-pink-50",
-    }, */
+    },
   ]
 
   const containerVariants = {
