@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
       icon: Instagram,
       color: "from-pink-500 to-purple-600",
       hoverColor: "hover:from-pink-400 hover:to-purple-500",
-      url: "https://www.instagram.com/joel.valdes.5648137?igsh=N25icDZrMmR0Znl3",
+      url: "https://www.instagram.com/classicagencytaxi?igsh=MXdrcGp3bjkxNnZuMw==",
       bgColor: "bg-pink-50",
     },
   ]
